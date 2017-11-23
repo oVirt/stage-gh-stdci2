@@ -1,6 +1,10 @@
 distros:
   - el7
   - fc26
-release_branches:
-  master: dummy-master
-  'v1.0': dummy-1.0
+substage:
+  - a:
+      release_branches:
+        master: dummy-master
+  - b:
+      release_branches:
+        'v1.0': dummy-1.0

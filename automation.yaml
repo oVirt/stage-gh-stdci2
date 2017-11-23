@@ -3,8 +3,12 @@ distros:
   - fc26
 substage:
   - a:
-      release_branches:
-        master: dummy-master
+      script:
+        fromfile: check-patch.sh
   - b:
-      release_branches:
-        'v1.0': dummy-1.0
+      script: |
+        #!/bin/bash
+        echo "THIS IS A TEST FOR SUBSTAGES"
+release_branches:
+  master: dummy-master
+  'v1.0': dummy-1.0

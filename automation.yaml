@@ -4,7 +4,7 @@ distros:
 substage:
   - a:
       script:
-        fromfile: check-patch.sh
+        fromfile: automation/check-patch.sh
   - b:
       script: |
         #!/bin/bash

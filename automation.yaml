@@ -3,12 +3,11 @@ distros:
   - fc26
 substage:
   - a:
-      script:
-        fromfile: automation/check-patch.sh
+      script: 'echo TESTING STDCI DSL'
+      release_branches:
+        master: dummy-master
   - b:
-      script: |
-        #!/bin/bash
-        echo "THIS IS A TEST FOR SUBSTAGES"
-release_branches:
-  master: dummy-master
-  'v1.0': dummy-1.0
+      script:
+        fromfile: 'automation/check-patch.sh'
+      release_branches:
+        v1.0: dummy-1.0

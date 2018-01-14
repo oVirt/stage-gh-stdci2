@@ -1,4 +1,4 @@
-distros:
+distro:
   - el7
   - fc26
 substage:

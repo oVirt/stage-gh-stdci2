@@ -5,10 +5,8 @@ substage:
   - a:
       script:
         fromfile: test.sh
-      release_branches:
-        master: dummy-master
   - b:
       script:
         fromfile: 'automation/check-patch.sh'
-      release_branches:
-        v1.0: dummy-1.0
+release_branches:
+  master: dummy-master

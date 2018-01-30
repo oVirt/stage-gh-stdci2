@@ -3,7 +3,8 @@ distros:
   - fc26
 substage:
   - a:
-      script: 'echo TESTING STDCI DSL'
+      script:
+        fromfile: test.sh
       release_branches:
         master: dummy-master
   - b:

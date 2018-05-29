@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "TESTING"
+echo "This thread should fail"
+exit 1

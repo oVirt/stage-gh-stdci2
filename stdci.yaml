@@ -1,7 +1,4 @@
 ---
-distros:
-  - el7
-  - fc26
 substage:
   - a:
       script:

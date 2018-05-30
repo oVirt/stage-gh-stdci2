@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "This thread should fail"
-exit 1
+echo "The log"
+exit 0

@@ -1,13 +1,13 @@
 ---
-distros:
-  - el7
-  - fc26
 substage:
-  - a:
+  - lint:
       script:
         fromfile: test.sh
-  - b:
+  - unit-tests:
       script:
         fromfile: 'automation/check-patch.sh'
+  - check-docs:
+      script:
+        fromfile: test.sh
 release_branches:
   master: dummy-master

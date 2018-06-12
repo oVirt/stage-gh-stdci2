@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "TESTING"
+echo "The log"
+exit 0

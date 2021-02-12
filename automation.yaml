@@ -1,13 +1,3 @@
 ---
-distros:
-  - el7
-  - fc26
-substage:
-  - a:
-      script:
-        fromfile: test.sh
-  - b:
-      script:
-        fromfile: 'automation/check-patch.sh'
-release_branches:
-  master: dummy-master
+runtime-requirements:
+  node_label: foo
